@@ -1,19 +1,24 @@
-import React from 'react';
-import Input from "./Input" // Asegúrate de que esta ruta sea correcta
+import Imagen from "./Imagen"
 
-function Contenido() {
-  return (
-    <main>
-      <h1>Hola mundo</h1>
-      <h2>Nuevo proyecto</h2>
-      <a href="#"></a>
-      <input type="color" />
-      <input type="color" />
-      <input type="color" />
-      <Input /> 
-      <img src="/moto.jpg" alt="logo" />
-    </main>
-  );
+const Contenido = () => {
+    let imagenes =[1,2,3,4,5,6,7,8,9]
+
+    return (
+
+        <main>
+
+            <h1 className=''>"GALERIA DE IMAGENES"</h1>
+            <div>
+                {
+                 imagenes.map((img)=>(
+                    <Imagen/>
+                 ))}
+                
+            </div>
+
+        </main>
+
+    )
 }
 
-export default Contenido;
+export default Contenido
