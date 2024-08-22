@@ -1,6 +1,7 @@
-function Imagen(){
-    return(
-        <img src="" alt="img" />
+// Archivo: Imagen.js
+function Imagen() {
+    return (
+        <img src="" alt="Img" />
     )
 }
 export default Imagen
